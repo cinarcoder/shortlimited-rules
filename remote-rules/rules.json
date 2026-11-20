@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "platforms": [
     {
       "id": "youtube",
@@ -54,6 +54,15 @@
         "(?:youtube\\.com|youtu\\.be)/shorts/([A-Za-z0-9_-]{5,})"
       ],
       "blockAction": "back"
+    },
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "enabled": false,
+      "comingSoon": true,
+      "premium": true,
+      "type": "app",
+      "packages": ["com.instagram.android"]
     }
   ]
 }
