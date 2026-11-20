@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScrollLimit Privacy Policy</title>
+<meta name="description" content="Privacy policy of ScrollLimit, a parental app that limits how many short videos a child can watch per day.">
+<style>
+  :root {
+    --bg: #F3F6F4; --card: #FFFFFF; --ink: #14211C; --muted: #56635D; --line: #DFE7E2;
+    --brand: #087F5B; --soft: #E3F7EE;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0E1714; --card: #15211C; --ink: #E7F0EB; --muted: #A2B3AA; --line: #24342D;
+            --brand: #5FD3A6; --soft: #17352A; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px max(16px, env(safe-area-inset-left)) 56px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  header svg { width: 52px; height: 52px; border-radius: 14px; flex: none; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0; }
+  .meta { color: var(--muted); font-size: .9rem; margin: 4px 0 20px; }
+  nav { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+  nav a { text-decoration: none; color: var(--brand); background: var(--soft);
+          padding: 6px 14px; border-radius: 999px; font-weight: 600; font-size: .9rem; }
+  section.lang { background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+                 padding: 8px 24px 20px; margin-bottom: 24px; }
+  h2 { font-size: 1.25rem; margin: 20px 0 6px; }
+  h3 { font-size: 1.02rem; margin: 22px 0 4px; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 1.2em; margin: 6px 0; }
+  li { margin: 4px 0; }
+  .note { background: var(--soft); border-radius: 14px; padding: 12px 16px; margin: 14px 0; }
+  a { color: var(--brand); }
+  code { font-size: .9em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg viewBox="0 0 512 512" aria-hidden="true">
+      <rect width="512" height="512" fill="#0CA678"/>
+      <rect x="171" y="102" width="170" height="307" rx="38" fill="none" stroke="#fff" stroke-width="21"/>
+      <line x1="256" y1="226" x2="256" y2="350" stroke="#fff" stroke-width="21" stroke-linecap="round"/>
+      <path d="M218 260 L256 222 L294 260" fill="none" stroke="#fff" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="205" y1="175" x2="307" y2="175" stroke="#FFD43B" stroke-width="26" stroke-linecap="round"/>
+    </svg>
+    <h1>ScrollLimit Privacy Policy</h1>
+  </header>
+  <p class="meta">Effective date / Yürürlük tarihi: 20 November 2026 · Developer / Geliştirici: cinarcoder</p>
+  <nav><a href="#en">English</a><a href="#tr">Türkçe</a></nav>
+
+  <section class="lang" id="en" lang="en">
+    <h2>English</h2>
+    <p>ScrollLimit ("the app") helps parents limit how many short videos (such as YouTube Shorts and TikTok) a child can watch on an Android device each day. This policy explains what information the app uses and how. In short: <strong>the app does not collect, sell or share personal data, and nothing on the screen ever leaves the device.</strong></p>
+
+    <h3>1. Accessibility service</h3>
+    <p>The app uses the Android Accessibility API to recognise when a short-video player is open in a supported app (YouTube, TikTok and supported web browsers), to count the videos watched, and to close short videos when the daily limit is reached or during bedtime. It also watches this app's own pages in system Settings, so a child cannot turn the app off.</p>
+    <ul>
+      <li>It reads screen content only from supported short-video apps, supported browsers (only the address bar) and system Settings/installer screens. For any other app it only looks at the app's package name.</li>
+      <li>To avoid counting the same video twice, it keeps the identifier of the <em>last</em> watched short video (for example the channel name and video title shown on screen) on the device. It is replaced by each new video.</li>
+      <li>Screen content is processed only on the device. It is never stored beyond what is described above, and it is never sent anywhere.</li>
+    </ul>
+
+    <h3>2. Information stored on the device</h3>
+    <p>The following is stored only in the app's private storage on the device:</p>
+    <ul>
+      <li>Your settings: daily limit, bedtime hours, language, pause and extra-video state.</li>
+      <li>Today's video count and the last video identifier (see above).</li>
+      <li>The parent PIN, stored only as a salted cryptographic hash (the PIN itself is not stored).</li>
+      <li>The free-trial start time and whether Premium was purchased.</li>
+    </ul>
+    <p>This information is not backed up to the cloud by the app. It is deleted when you uninstall the app or clear its data.</p>
+
+    <h3>3. Internet use</h3>
+    <ul>
+      <li><strong>Rules update:</strong> about once a day the app downloads a public, digitally signed rules file (the list of supported apps) from GitHub Pages (<code>cinarcoder.github.io</code>). The request contains no personal data, no identifiers and no information about your use of the app. Like any web server, GitHub may record technical data such as your IP address; see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</li>
+      <li><strong>Purchases:</strong> Premium is a one-time in-app purchase processed by Google Play. Payment details are handled by Google, not by the app. The app only receives the purchase status from Google Play to unlock Premium. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+    </ul>
+    <p>The app contains no advertising, no analytics and no tracking SDKs, and it does not require an account.</p>
+
+    <h3>4. Device administrator</h3>
+    <p>If the parent turns on "Uninstall protection", the app is registered as a device administrator only to prevent it from being uninstalled without the parent. It uses no administrator policies: it cannot lock, wipe or monitor the device.</p>
+
+    <h3>5. Children</h3>
+    <p>The app is intended for parents and guardians, who install and configure it. It does not collect personal information from children, and it does not show ads or contact children in any way.</p>
+
+    <h3>6. Your choices</h3>
+    <p>You can turn off the accessibility service or uninstall protection at any time in Android Settings (the parent PIN is required). Uninstalling the app removes all of its data from the device.</p>
+
+    <h3>7. Changes</h3>
+    <p>If this policy changes, the new version will be published on this page with a new effective date.</p>
+
+    <h3>8. Contact</h3>
+    <p>Questions about this policy: <a href="mailto:kesifargedev@gmail.com">kesifargedev@gmail.com</a></p>
+  </section>
+
+  <section class="lang" id="tr" lang="tr">
+    <h2>Türkçe</h2>
+    <p>ScrollLimit ("uygulama"), ebeveynlerin bir Android cihazda çocuğun günde kaç kısa video (YouTube Shorts, TikTok gibi) izleyebileceğini sınırlamasına yardım eder. Bu politika, uygulamanın hangi bilgileri nasıl kullandığını açıklar. Kısacası: <strong>uygulama kişisel veri toplamaz, satmaz, paylaşmaz; ekrandaki hiçbir şey cihazdan çıkmaz.</strong></p>
+
+    <h3>1. Erişilebilirlik hizmeti</h3>
+    <p>Uygulama, desteklenen bir uygulamada (YouTube, TikTok ve desteklenen tarayıcılar) kısa video oynatıcısının açık olduğunu anlamak, izlenen videoları saymak ve günlük sınır dolduğunda ya da uyku saatinde kısa videoları kapatmak için Android Erişilebilirlik API'sini kullanır. Ayrıca çocuğun uygulamayı kapatamaması için sistem Ayarları'ndaki kendi sayfalarını izler.</p>
+    <ul>
+      <li>Ekran içeriğini yalnızca desteklenen kısa video uygulamalarından, desteklenen tarayıcılardan (yalnızca adres çubuğu) ve sistem Ayarları/yükleyici ekranlarından okur. Diğer uygulamalarda yalnızca uygulamanın paket adına bakar.</li>
+      <li>Aynı videoyu iki kez saymamak için <em>son</em> izlenen kısa videonun kimliğini (örneğin ekranda görünen kanal adı ve video başlığı) cihazda tutar. Her yeni videoda bu bilgi değişir.</li>
+      <li>Ekran içeriği yalnızca cihazda işlenir. Yukarıda anlatılanın dışında saklanmaz ve hiçbir yere gönderilmez.</li>
+    </ul>
+
+    <h3>2. Cihazda saklanan bilgiler</h3>
+    <p>Aşağıdakiler yalnızca uygulamanın cihazdaki özel depolama alanında tutulur:</p>
+    <ul>
+      <li>Ayarlarınız: günlük sınır, uyku saatleri, dil, duraklatma ve ek video durumu.</li>
+      <li>Bugünkü video sayısı ve son video kimliği (yukarıya bakın).</li>
+      <li>Ebeveyn PIN'i; yalnızca tuzlanmış şifreli özet (hash) olarak saklanır, PIN'in kendisi saklanmaz.</li>
+      <li>Ücretsiz deneme başlangıç zamanı ve Premium'un satın alınıp alınmadığı.</li>
+    </ul>
+    <p>Bu bilgiler uygulama tarafından buluta yedeklenmez. Uygulamayı kaldırdığınızda ya da verilerini sildiğinizde silinir.</p>
+
+    <h3>3. İnternet kullanımı</h3>
+    <ul>
+      <li><strong>Kural güncellemesi:</strong> Uygulama yaklaşık günde bir kez, GitHub Pages'ten (<code>cinarcoder.github.io</code>) herkese açık ve dijital olarak imzalı bir kural dosyası (desteklenen uygulamaların listesi) indirir. Bu istekte kişisel veri, kimlik ya da uygulama kullanımınıza dair bilgi bulunmaz. Her web sunucusu gibi GitHub da IP adresi gibi teknik verileri kaydedebilir; bkz. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Gizlilik Bildirimi</a>.</li>
+      <li><strong>Satın alma:</strong> Premium, Google Play üzerinden yapılan tek seferlik bir uygulama içi satın almadır. Ödeme bilgileri uygulama tarafından değil Google tarafından işlenir. Uygulama, Premium'u açmak için Google Play'den yalnızca satın alma durumunu alır. Bkz. <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>.</li>
+    </ul>
+    <p>Uygulamada reklam, analiz ya da izleme yazılımı yoktur; hesap gerektirmez.</p>
+
+    <h3>4. Cihaz yöneticisi</h3>
+    <p>Ebeveyn "Silme koruması"nı açarsa uygulama, yalnızca ebeveyn olmadan kaldırılmasını engellemek için cihaz yöneticisi olarak kaydedilir. Hiçbir yönetici yetkisi kullanmaz: cihazı kilitleyemez, silemez ya da izleyemez.</p>
+
+    <h3>5. Çocuklar</h3>
+    <p>Uygulama, onu kuran ve ayarlayan ebeveynler ve veliler içindir. Çocuklardan kişisel bilgi toplamaz, reklam göstermez ve çocuklarla hiçbir şekilde iletişim kurmaz.</p>
+
+    <h3>6. Tercihleriniz</h3>
+    <p>Erişilebilirlik hizmetini ya da silme korumasını istediğiniz zaman Android Ayarları'ndan kapatabilirsiniz (ebeveyn PIN'i gerekir). Uygulamayı kaldırmak tüm verilerini cihazdan siler.</p>
+
+    <h3>7. Değişiklikler</h3>
+    <p>Bu politika değişirse yeni sürüm, yeni yürürlük tarihiyle bu sayfada yayınlanır.</p>
+
+    <h3>8. İletişim</h3>
+    <p>Bu politikayla ilgili sorular: <a href="mailto:kesifargedev@gmail.com">kesifargedev@gmail.com</a></p>
+  </section>
+</div>
+</body>
+</html>
