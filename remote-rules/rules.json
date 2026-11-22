@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "platforms": [
     {
       "id": "youtube",
@@ -63,6 +63,15 @@
       "premium": true,
       "type": "app",
       "packages": ["com.instagram.android"]
+    },
+    {
+      "id": "x",
+      "name": "X",
+      "enabled": false,
+      "comingSoon": true,
+      "premium": true,
+      "type": "app",
+      "packages": ["com.twitter.android"]
     }
   ]
 }
