@@ -1,5 +1,6 @@
 {
-  "version": 3,
+  "version": 4,
+  "minAppVersion": 6,
   "platforms": [
     {
       "id": "youtube",
@@ -67,11 +68,16 @@
     {
       "id": "x",
       "name": "X",
-      "enabled": false,
-      "comingSoon": true,
       "premium": true,
       "type": "app",
-      "packages": ["com.twitter.android"]
+      "packages": ["com.twitter.android"],
+      "containerIds": ["ImmersiveVideo"],
+      "composeIds": true,
+      "textOnly": true,
+      "containerParent": 1,
+      "footer": { "topPercent": 60, "rightPercent": 97 },
+      "blockWholeApp": false,
+      "blockAction": "back"
     }
   ]
 }
