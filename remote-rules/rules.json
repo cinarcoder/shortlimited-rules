@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "minAppVersion": 6,
+  "version": 5,
+  "minAppVersion": 9,
   "platforms": [
     {
       "id": "youtube",
@@ -59,11 +59,15 @@
     {
       "id": "instagram",
       "name": "Instagram",
-      "enabled": false,
-      "comingSoon": true,
+      "sectionName": "Reels",
       "premium": true,
       "type": "app",
-      "packages": ["com.instagram.android"]
+      "packages": ["com.instagram.android"],
+      "containerIds": ["clips_viewer_view_pager"],
+      "keyIds": ["clips_author_username", "like_count", "comment_count"],
+      "swipeRequired": true,
+      "blockWholeApp": false,
+      "blockAction": "back"
     },
     {
       "id": "x",
